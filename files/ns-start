@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+FILES=$(ls -A /etc/openvpn)
+
+if [ "$FILES" = "" ];then
+	tar -xzvf /opt/data.tgz
+fi
+
+
+exec /bin/bash
